@@ -1,1 +1,248 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Domine:wght@700&family=Inter:wght@400;600&family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+.chessbutton {
+    background-color: none;
+    
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 50%;
+    align-items: center;
+    padding: 20px 50px;
+    width: 13%;
+    font-size: 16px;
+    border: 1px solid #4CAF50;
+    margin-left: 45%;
+    margin-top: -10px;
+    cursor: pointer;
+  }
+  
+  .chessbutton:hover {
+    background-color: #45a049;
+  }
+  
+  .chessbutton h2 {
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ /* Begin Header  */
+#header .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(141, 45, 45, 0.845);
+  padding: 10px;
+}
+
+#header .nav-list ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+}
+
+#header .nav-list ul li {
+  margin-right: 80px;
+}
+
+#header .nav-list ul li a {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 150px;
+}
+
+#header .nav-list ul li a:hover {
+  color: #8fd3f4;
+}
+
+/* End Header */
+
+/* Hero section */
+#hero {
+    background-image: url(/Img/Background4.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#hero .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+#hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+#hero h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgba(114, 35, 27, 0.939);
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+
+
+#hero h1:nth-child(1) {
+    animation-delay: 1s;
+}
+
+
+
+
+#hero h1:nth-child(1) span {
+    animation-delay: .5s;
+}
+
+
+
+
+/* End section */
+
+/* Keyframes */
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text_reveal {
+    100% {
+        color: white;
+    }
+}
+
+/* End Keyframes*/
+
+h2 {
+    color: black;
+    font-size: 35px;
+}
+
+/* Beginner section */
+#beginner .beginner {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#beginner .beginner-header h1 {
+    margin-bottom: 50px;
+
+}
+
+#beginner .all-beginner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#beginner .beginner-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#beginner .beginner-info {
+    padding: 30px;
+    flex-basis: 50%;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #8fd3f4;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color: white;
+}
+
+#beginner .beginner-info h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+#beginner .beginner-info p {
+    color: white;
+
+}
+
+#beginner .beginner-img {
+    flex-basis: 50%;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+
+/* End section */

@@ -13,26 +13,26 @@
 
 <body>
     <!--Header-->
-    <section id="header">
-        <div class="header-container">
-            <div class="nav-bar">
-
-                <div class="nav-list">
-                    <div class="hamburger">
-
-                        <ul>
-
-                            <li><a href="/dist/Index.html">Home</a></li>
-                            <li><a href="./beginner.html">Beginner</a></li>
-                            <li><a href="/dist/mediocre.html">Mediocre</a></li>
-                            <li><a href="/dist//expert.html">Extras</a></li>
-                            
-                        </ul>
-                    </div>
+    <section class="button-section">
+        <div class="button-container">
+            <button class="navigation-button"><a href="/dist/Index.html">Home</a></button>
+            <button class="navigation-button"><a href="./beginner.html">Beginner</a></button>
+            <button class="navigation-button active"><a href="/dist/mediocre.html">Mediocre</a></button>
+            <button class="navigation-button"><a href="/dist/extras.html">Extras</a></button>
+        </div>
+    </section>
+    <section id="Mediocre">
+        <div class="mediocre container">
+            <div class="col-left">
+                <div class="mediocre-img">
+                    <img src="/Img/Mediocre_img.jpg" alt="img">
                 </div>
             </div>
+            <div class="col-right">
+                <h1 class="section-title">Mediocre</h1>
+                <h2>Early Game</h2>
+            </div>
         </div>
-        <div id="chessboard"></div>
     </section>
    
     <script type="module" src="/dist/mediocre.js"></script>

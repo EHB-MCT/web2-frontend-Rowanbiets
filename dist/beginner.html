@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,135 +7,196 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chesstastic</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 
-
 <body>
+    <div class="background">
     <section class="button-section">
         <div class="button-container">
             <button class="navigation-button"><a href="/dist/Index.html">Home</a></button>
-            <button class="navigation-button"><a href="./beginner.html">Beginner</a></button>
+            <button class="navigation-button active"><a class="page" href="./beginner.html">Beginner</a></button>
             <button class="navigation-button"><a href="/dist/mediocre.html">Mediocre</a></button>
             <button class="navigation-button"><a href="/dist/extras.html">Extras</a></button>
         </div>
-     
     </section>
 
- 
-<!--Beginner section-->
- <section id="beginner">
-    <div class="beginner container">
-        <div class="beginner-header">
-
-            <div class="all-beginner">
-                <div class="beginner-item">
-                    <div class="beginner-info">
-                        <h1>Pawn</h1>
-                        <p>the most numerous and weakest piece in the game of chess. It may move one vacant
-                            square
-                            directly
-                            forward, it may move two vacant squares directly forward on its first move, and it
-                            may
-                            capture
-                            one
-                            square diagonally forward. Each player begins a game with eight pawns, one on each
-                            square of
-                            their
-                            second rank. The white pawns start on a2 through h2; the black pawns start on a7
-                            through h7.
-                        </p>
+    <div class="title">
+        <span class="typing-text" data-text="Chesspieces"></span>
+        <span class="cursor"></span>
+    </div>
+    <!--Beginner section-->
+    <section id="beginner">
+        <div class="beginner container">
+            <div class="beginner-header">
+                <div class="row">
+                    <div class="beginner-item">
+                        <div class="beginner-img">
+                            <img src="/Img/Untitled-2.jpg" alt="Pawn">
+                        </div>
+                        <div class="beginner-info">
+                            <h1>Pawn</h1>
+                            <p>The most numerous and weakest piece in the game of chess. It may move one vacant square directly forward, it may move two vacant squares directly forward on its first move, and it may capture one square diagonally forward. Each player begins a game with eight pawns, one on each square of their second rank. The white pawns start on a2 through h2; the black pawns start on a7 through h7.</p>
+                        </div>
                     </div>
-                    <div class="beginner-img">
-                        <img src="/Img/Untitled-2.jpg" alt="img">
+                    <div class="beginner-item">
+                        <div class="beginner-img">
+                            <img src="/Img/Knight2.jpg" alt="Knight">
+                        </div>
+                        <div class="beginner-info">
+                            <h1>Knight</h1>
+                            <p>Represented by a horse's head and neck. It moves two squares vertically and one
+                                square horizontally, or two squares horizontally and one square vertically,
+                                jumping over other pieces. Each player starts the game with two knights on the b-
+                                and g-files, each located between a rook and a bishop.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="beginner-item">
-                    <div class="beginner-info">
-                        <h1>Knight</h1>
-                        <p>represented by a horse's head and neck. It moves two squares vertically and one
-                            square horizontally, or two squares horizontally and one square vertically, jumping
-                            over other pieces. Each player starts the game with two knights on the b- and
-                            g-files, each located between a rook and a bishop.
-                        </p>
-                    </div>
-                    <div class="beginner-img">
-                        <img src="/Img/Knight2.jpg" alt="img">
-                    </div>
-                </div>
-                <div class="beginner-item">
-                    <div class="beginner-info">
-                        <h1>Bishop</h1>
-                        <p> It moves and captures along diagonals without jumping over intervening pieces. Each
-                            player begins the game with two bishops. One starts between the king's knight and
-                            the king, the other between the queen's knight and the queen. The starting squares
-                            are c1 and f1 for White's bishops, and c8 and f8 for Black's bishops.
-                        </p>
-                    </div>
-                    <div class="beginner-img">
-                        <img src="/Img/Bishop.jpg" alt="img">
+                    <div class="beginner-item">
+                        <div class="beginner-img">
+                            <img src="/Img/Bishop.jpg" alt="Bishop">
+                        </div>
+                        <div class="beginner-info">
+                            <h1>Bishop</h1>
+                            <p>It moves and captures along diagonals without jumping over intervening pieces. Each
+                                player begins the game with two bishops. One starts between the king's knight and
+                                the king, the other between the queen's knight and the queen. The starting squares
+                                are c1 and f1 for White's bishops, and c8 and f8 for Black's bishops.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="beginner-item">
-                    <div class="beginner-info">
-                        <h1>Rook</h1>
-                        <p>It may move any number of squares horizontally or vertically without jumping, and it
-                            may capture an enemy piece on its path; additionally, it may participate in
-                            castling. Each player starts the game with two rooks, one in each corner on their
-                            own side of the board.
-                        </p>
+                <div class="row">
+                    <div class="beginner-item">
+                        <div class="beginner-img">
+                            <img src="/Img/Rook.jpg" alt="Rook">
+                        </div>
+                        <div class="beginner-info">
+                            <h1>Rook</h1>
+                            <p>It may move any number of squares horizontally or vertically without jumping, and
+                                it may capture an enemy piece on its path; additionally, it may participate in
+                                castling. Each player starts the game with two rooks, one in each corner on their
+                                own side of the board.</p>
+                        </div>
                     </div>
-                    <div class="beginner-img">
-                        <img src="/Img/Rook.jpg" alt="img">
+                    <div class="beginner-item">
+                        <div class="beginner-img">
+                            <img src="/Img/Queen2.jpg" alt="Queen">
+                        </div>
+                        <div class="beginner-info">
+                            <h1>Queen</h1>
+                            <p>The most powerful piece in the game of chess. It can move any number of squares
+                                vertically, horizontally, or diagonally, combining the powers of the rook and
+                                bishop. Each player starts the game with one queen, placed in the middle of the
+                                first rank next to the king. Because the queen is the strongest piece, a pawn is
+                                promoted to a queen in the vast majority of cases.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="beginner-item">
-                    <div class="beginner-info">
-                        <h1>Queen</h1>
-                        <p>The most powerful piece in the game of chess. It can move any number of squares
-                            vertically, horizontally or diagonally, combining the powers of the rook and bishop.
-                            Each player starts the game with one queen, placed in the middle of the first rank
-                            next to the king. Because the queen is the strongest piece, a pawn is promoted to a
-                            queen in the vast majority of cases.
-                        </p>
-                    </div>
-                    <div class="beginner-img">
-                        <img src="/Img/Queen2.jpg" alt="img">
-                    </div>
-                </div>
-                <div class="beginner-item">
-                    <div class="beginner-info">
-                        <h1>King</h1>
-                        <p> The most important piece in the game of chess. It may move to any adjoining square;
-                            it may also perform a move known as castling. If a player's king is threatened with
-                            capture, it is said to be in check, and the player must remove the threat of capture
-                            on the next move. If this cannot be done, the king is said to be in checkmate,
-                            resulting in a loss for that player. A player cannot make any move that places their
-                            own king in check. Despite this, the king can become a strong offensive piece in the
-                            endgame or, rarely, the middlegame.
-                        </p>
-                    </div>
-                    <div class="beginner-img">
-                        <img src="/Img/King.jpg" alt="img">
+                    <div class="beginner-item">
+                        <div class="beginner-img">
+                            <img src="/Img/King.jpg" alt="King">
+                        </div>
+                        <div class="beginner-info">
+                            <h1>King</h1>
+                            <p>The most important piece in the game of chess. It may move to any adjoining square;
+                                it may also perform a move known as castling. If a player's king is threatened with
+                                capture, it is said to be in check, and the player must remove the threat of
+                                capture on the next move. If this cannot be done, the king is said to be in
+                                checkmate, resulting in a loss for that player. A player cannot make any move that
+                                places their own king in check.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!--End Beginner-->
+    </section>
 
-<!--Mediocre section-->
-<section id="Mediocre">
-    <div class="mediocre container">
-        <div class="col-left">
-            <div class="mediocre-img">
-                <img src="/Img/Mediocre_img.jpg" alt="img">
+    <section id="how-to-play">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NAIQyoPcjNM" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="title">How to Play</div>
+        <div class="typing-text">The content you want to type...</div>
+    </section>
+
+    <section id="beginner">
+        <!-- ... Other content ... -->
+        
+        <!-- Chess Puzzles -->
+        <div class="chess-puzzle">
+            <h2>Puzzle 1: Checkmate in 1 move</h2>
+            <div class="chessboard">
+                <div></div> <div></div> <div></div> <div>♛</div> <div></div> <div>♚</div> <div>♞</div> <div></div>
+                <div></div> <div>♟</div> <div></div> <div>♟</div> <div></div> <div>♟</div> <div>♟</div> <div></div>
+                <div>♜</div> <div></div> <div>♗</div> <div></div> <div>♝</div> <div>♟</div> <div></div> <div>♜</div>
+                <div>♝</div> <div></div> <div>♙</div> <div>♙</div> <div></div> <div></div> <div></div> <div>♟</div>
+                <div></div> <div>♗</div> <div></div> <div>♙</div> <div>♟</div> <div>♞</div> <div></div> <div></div>
+                <div>♟</div> <div>♙</div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
+                <div></div> <div>♖</div> <div>♖</div> <div>♙</div> <div>♙</div> <div>♗</div> <div>♙</div> <div>♖</div>
+                <div>♕</div> <div></div> <div>♕</div> <div>♔</div> <div></div> <div>♕</div> <div></div> <div>♔</div>
+            </div>
+            <p>White to move and checkmate in 1 move.</p>
+        </div>
+    
+        <div class="chess-puzzle">
+            <h2>Puzzle 2: Checkmate in 2 moves</h2>
+            <div class="chessboard">
+                <div></div> <div></div> <div></div> <div></div> <div>♛</div> <div></div> <div></div> <div></div>
+                <div></div> <div>♖</div> <div></div> <div></div> <div></div> <div>♟</div> <div></div> <div></div>
+                <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
+                <div></div> <div></div> <div></div> <div></div> <div>♙</div> <div></div> <div>♚</div> <div></div>
+                <div></div> <div></div> <div>♘</div> <div>♙</div> <div></div> <div></div> <div></div> <div></div>
+                <div></div> <div></div> <div></div> <div>♗</div> <div></div> <div></div> <div></div> <div></div>
+                <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div>♕</div> <div></div>
+                <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
+            </div>
+            <p>White to move and checkmate in 2 moves.</p>
+        </div>
+    
+        <div class="chess-puzzle">
+            <h2>Puzzle 3: White to play and win material</h2>
+            <div class="chessboard">
+                <!-- Insert the puzzle position here -->
             </div>
         </div>
-        <div class="col-right">
-            <h1 class="section-title">Mediocre</h1>
-            <h2>Early Game</h2>
+    
+        <div class="chess-puzzle">
+            <h2>Puzzle 4: Black to play and win material</h2>
+            <div class="chessboard">
+                <!-- Insert the puzzle position here -->
+            </div>
         </div>
+    
+        <div class="chess-puzzle">
+            <h2>Puzzle 5: White to play and checkmate in 3 moves</h2>
+            <div class="chessboard">
+                <!-- Insert the puzzle position here -->
+            </div>
+        </div>
+    
+        <!-- ... More content ... -->
+    </section>
+    
+    <!--End Beginner-->
+   
+    <script>
+        // JavaScript to add the typing effect to the title
+        const titleElement = document.querySelector(".title");
+        const text = titleElement.querySelector(".typing-text").dataset.text;
+        let index = 0;
+
+        function type() {
+            const typingText = titleElement.querySelector(".typing-text");
+            typingText.textContent = text.slice(0, index);
+            index++;
+            if (index <= text.length) {
+                setTimeout(type, 100); 
+            }
+        }
+
+        // Call the type function when the DOM is loaded
+        document.addEventListener("DOMContentLoaded", () => {
+            type(); // Start the typing effect when the DOM is loaded
+        });
+    </script>
     </div>
-</section>
+</body>
+
+</html>

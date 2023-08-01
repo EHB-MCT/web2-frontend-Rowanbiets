@@ -1,0 +1,30 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.chessboard-container {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.puzzle-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

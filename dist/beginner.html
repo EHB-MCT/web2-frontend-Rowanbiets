@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chesstastic</title>
     <link rel="stylesheet" href="style.css">
+    <script src="/dist/bundle.js" defer></script>
+    <script src="/node_modules/chessboardjs/www/js/chessboard.js"></script>
 </head>
 
 <body>
@@ -99,8 +101,7 @@
                                 it may also perform a move known as castling. If a player's king is threatened with
                                 capture, it is said to be in check, and the player must remove the threat of
                                 capture on the next move. If this cannot be done, the king is said to be in
-                                checkmate, resulting in a loss for that player. A player cannot make any move that
-                                places their own king in check.</p>
+                                checkmate, resulting in a loss for that player.</p>
                         </div>
                     </div>
                 </div>
@@ -116,65 +117,22 @@
         <div class="typing-text">The content you want to type...</div>
     </section>
 
-    <section id="beginner">
-        <!-- ... Other content ... -->
-        
-        <!-- Chess Puzzles -->
-        <div class="chess-puzzle">
-            <h2>Puzzle 1: Checkmate in 1 move</h2>
-            <div class="chessboard">
-                <div></div> <div></div> <div></div> <div>♛</div> <div></div> <div>♚</div> <div>♞</div> <div></div>
-                <div></div> <div>♟</div> <div></div> <div>♟</div> <div></div> <div>♟</div> <div>♟</div> <div></div>
-                <div>♜</div> <div></div> <div>♗</div> <div></div> <div>♝</div> <div>♟</div> <div></div> <div>♜</div>
-                <div>♝</div> <div></div> <div>♙</div> <div>♙</div> <div></div> <div></div> <div></div> <div>♟</div>
-                <div></div> <div>♗</div> <div></div> <div>♙</div> <div>♟</div> <div>♞</div> <div></div> <div></div>
-                <div>♟</div> <div>♙</div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
-                <div></div> <div>♖</div> <div>♖</div> <div>♙</div> <div>♙</div> <div>♗</div> <div>♙</div> <div>♖</div>
-                <div>♕</div> <div></div> <div>♕</div> <div>♔</div> <div></div> <div>♕</div> <div></div> <div>♔</div>
-            </div>
-            <p>White to move and checkmate in 1 move.</p>
+    <section id="chess-Puzzles">
+       
+        <div class="title">Chess Puzzles</div>
+
+        <div id="puzzle1" class="puzzle-container">
+            <h2>Puzzle 1</h2>
+            <p>Find the best move for White.</p>
+            <div id="chessboard1"></div>
         </div>
-    
-        <div class="chess-puzzle">
-            <h2>Puzzle 2: Checkmate in 2 moves</h2>
-            <div class="chessboard">
-                <div></div> <div></div> <div></div> <div></div> <div>♛</div> <div></div> <div></div> <div></div>
-                <div></div> <div>♖</div> <div></div> <div></div> <div></div> <div>♟</div> <div></div> <div></div>
-                <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
-                <div></div> <div></div> <div></div> <div></div> <div>♙</div> <div></div> <div>♚</div> <div></div>
-                <div></div> <div></div> <div>♘</div> <div>♙</div> <div></div> <div></div> <div></div> <div></div>
-                <div></div> <div></div> <div></div> <div>♗</div> <div></div> <div></div> <div></div> <div></div>
-                <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div>♕</div> <div></div>
-                <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
-            </div>
-            <p>White to move and checkmate in 2 moves.</p>
+
+        <div id="puzzle2" class="puzzle-container">
+            <h2>Puzzle 2</h2>
+            <p>Find the best move for Black.</p>
+            <div id="chessboard2"></div>
         </div>
-    
-        <div class="chess-puzzle">
-            <h2>Puzzle 3: White to play and win material</h2>
-            <div class="chessboard">
-                <!-- Insert the puzzle position here -->
-            </div>
-        </div>
-    
-        <div class="chess-puzzle">
-            <h2>Puzzle 4: Black to play and win material</h2>
-            <div class="chessboard">
-                <!-- Insert the puzzle position here -->
-            </div>
-        </div>
-    
-        <div class="chess-puzzle">
-            <h2>Puzzle 5: White to play and checkmate in 3 moves</h2>
-            <div class="chessboard">
-                <!-- Insert the puzzle position here -->
-            </div>
-        </div>
-    
-        <!-- ... More content ... -->
     </section>
-    
-    <!--End Beginner-->
    
     <script>
         // JavaScript to add the typing effect to the title

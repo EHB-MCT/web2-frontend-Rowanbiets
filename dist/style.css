@@ -342,44 +342,27 @@ z-index: 5;
     height: 100%;
 }
 
-/* Styling for chess puzzles */
-#beginner .chess-puzzle {
-    margin: 20px 0;
+
+
+#chess-Puzzles {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    z-index: 20;
 }
 
-#beginner .chessboard {
-    width: 200px; /* Adjust the size of the chessboard */
-    height: 200px; /* Adjust the size of the chessboard */
-    border: 1px solid #ccc;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+#chess-Puzzles .title {
+    font-size: 48px;
+    top: 210%; /* Adjust the top position as needed */
 }
 
-#beginner .chessboard div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
+
+#chess-Puzzles .typing-text::after {
+    content: '|'; 
+    display: inline-block;
+    animation: cursor-blink 0.8s infinite;
+    vertical-align: bottom;
 }
-
-#beginner .chessboard div:nth-child(even) {
-    background-color: #eee;
-}
-
-#beginner .chessboard div:nth-child(odd) {
-    background-color: #fff;
-}
-
-/* Insert the puzzle positions for each chessboard here */
-
-/* Optional: Add styles for puzzle titles and other puzzle-related elements */
-#beginner .chess-puzzle h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
 
 
 

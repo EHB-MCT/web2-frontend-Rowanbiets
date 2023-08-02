@@ -1,11 +1,29 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/script.js',
+  mode: 'development', // or 'production' for production build
+  entry: './src/index.js',
   output: {
-    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
   },
-  mode : 'production',
-  watch : true
+  module: {
+    rules: [
+      {
+        test: require.resolve('chessboardjs'),
+        loader: 'babel-loader',
+        options: {
+          type: 'commonjs',
+         exposes: 'single ChessBoard', // Export only the ChessBoard object
+        },
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: 'babel-loader',
+      },
+      
+    ],
+    
+  },
 };

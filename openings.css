@@ -1,0 +1,135 @@
+
+html{
+  background-color: #181515;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  /* Header */
+
+  .button-section {
+    background-color: none;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: none;
+    
+}
+
+.navigation-button {
+    background-color: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 50px;
+    font-size: 16px;
+    border: 2px solid rgb(160, 117, 38);
+    color: black;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.navigation-button:hover {
+    background-color:transparent;
+    border: 2px solid transparent;
+}
+
+
+.active {
+    border: none;
+}
+
+
+.navigation-button a {
+   color: rgb(160, 117, 38);
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* END HEADER */
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    position: absolute;
+    top: 150px;
+    left: 35%;
+    z-index: 10;
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(160, 117, 38);
+    overflow: hidden; 
+    
+}
+
+.title::after {
+    content: '|'; 
+    display: inline-block;
+    animation: cursor-blink 0.8s infinite;
+    vertical-align: bottom;
+}
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+
+@keyframes cursor-blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+.container{
+  margin-top: 9%;
+}
+  .openings-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+  
+
+  
+  .opening-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(160, 117, 38);
+  }
+  
+  .opening-explanation {
+    margin-top: 10px;
+    color: rgb(160, 117, 38);
+  }
+  
+  .opening-video {
+    padding: 8px;
+    border: 2px solid rgb(160, 117, 38);
+    color: white;
+    text-decoration: none;
+   
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .opening-video a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55pt;
+  }
+  

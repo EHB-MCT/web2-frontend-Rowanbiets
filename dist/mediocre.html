@@ -22,21 +22,85 @@
             <button class="navigation-button"><a href="/dist/extras.html">Extras</a></button>
         </div>
     </section>
-    <section id="Mediocre">
+    <section id="chess-openings">
         <div class="mediocre container">
             <div class="col-left">
-                <div class="mediocre-img">
-                    <img src="/Img/Mediocre_img.jpg" alt="img">
-                </div>
+              
             </div>
-            <div class="col-right">
-                <h1 class="section-title">Mediocre</h1>
-                <h2>Early Game</h2>
+        
+    <div class="title">
+        <span class="typing-text" data-text="Chess Openings"></span>
+        <span class="cursor"></span>
+    </div>
+   
+        <div class="container">
+            
+            <!-- First Chess Opening --> 
+            <div class="opening">
+
+             
+                <h3>Sicilian Defense</h3>
+                <p>
+                    The Sicilian Defense is one of the most popular and dynamic responses to White's first move, 1.e4. Black responds with 1...c5, challenging White's center and preparing to counterattack. The Sicilian Defense leads to rich and complex positions, offering both players opportunities for active play and strategic battles.
+                </p>
+
+                <div class="video-container">
+                    <iframe width="400" height="225"  src="https://www.youtube.com/embed/qM4e7g2RukI" frameborder="3"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+            </div>
+            <!-- Second Chess Opening -->
+            <div class="opening">
+
+             
+                <h3>Ruy Lopez </h3>
+                <p>
+                    The Ruy Lopez, also known as the Spanish Opening, arises after 1.e4 e5 2.Nf3 Nc6 3.Bb5. It is a classical opening that aims to control the center and develop pieces harmoniously. The Ruy Lopez often leads to closed or semi-open positions with plans involving pawn breaks, piece maneuvers, and kingside attacks.
+                </p>
+
+                <div class="video-container">
+                    <iframe width="400" height="225"  src="https://www.youtube.com/embed/GN7lp9V0szA" frameborder="3"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </div>
+            <!-- Third Chess Opening -->
+            <div class="opening">
+                <h3>Queen's Gambit Declined</h3>
+                <p>
+                    The Queen's Gambit Declined is a solid defense against 1.d4. After 1.d4 d5 2.c4 e6, Black declines the offer to capture the c4 pawn immediately. Instead, Black focuses on solidly developing pieces while maintaining a strong pawn structure. The Queen's Gambit Declined is known for its strategic complexity and has been a favorite choice of many top-level players.
+                </p>
+
+                <div class="video-container">
+                    <iframe width="400" height="225"  src="https://www.youtube.com/embed/q07FLgkYtNc" frameborder="3"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </div>
+            <!-- See All Button -->
+            <button class="see-all-button"><a href="/openings.html">More Popular openings</a></button>
         </div>
     </section>
    
-    <script type="module" src="/dist/mediocre.js"></script>
+     
+    <script>
+        // JavaScript to add the typing effect to the title
+        const titleElement = document.querySelector(".title");
+        const text = titleElement.querySelector(".typing-text").dataset.text;
+        let index = 0;
+
+        function type() {
+            const typingText = titleElement.querySelector(".typing-text");
+            typingText.textContent = text.slice(0, index);
+            index++;
+            if (index <= text.length) {
+                setTimeout(type, 100); 
+            }
+        }
+
+        // Call the type function when the DOM is loaded
+        document.addEventListener("DOMContentLoaded", () => {
+            type(); // Start the typing effect when the DOM is loaded
+        });
+    </script>
 
 </div>
     </body>

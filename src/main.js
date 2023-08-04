@@ -14,9 +14,7 @@ function displayOpenings(openings) {
   const openingsList = document.getElementById('openingsList');
 
   openings.forEach(opening => {
-    const openingCard = document.createElement('div');
-    openingCard.classList.add('opening-card');
-
+   
     const openingName = document.createElement('h2');
     openingName.classList.add('opening-name');
     openingName.textContent = opening.name;

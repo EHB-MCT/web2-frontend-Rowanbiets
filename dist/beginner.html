@@ -8,7 +8,7 @@
     <title>Chesstastic</title>
     <link rel="stylesheet" href="style.css">
     <script src="/dist/bundle.js" defer></script>
-    <script src="/node_modules/chessboardjs/www/js/chessboard.js"></script>
+    
 </head>
 
 <body>
@@ -23,6 +23,7 @@
     </section>
 
     <div class="title">
+      
         <span class="typing-text" data-text="Chesspieces"></span>
         <span class="cursor"></span>
     </div>
@@ -111,19 +112,55 @@
 
     <section id="how-to-play">
         <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/NAIQyoPcjNM" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NAIQyoPcjNM" frameborder="3" allowfullscreen></iframe>
         </div>
         <div class="title">How to Play</div>
         
     </section>
 
-    <section id="chess-Puzzles">
-       
-        <div class="title">Chess Puzzles</div>
+   <section id="chess-Puzzles">
+    <div class="title">FAQ</div>
 
-      
-    </section>
-   
+    <h2>1. How do the chess pieces move?</h2>
+    <p>
+        Each chess piece has its own unique way of moving. The pawn moves forward one square, but on its first move, it can move two squares. Rooks move horizontally or vertically any number of squares. Knights move in an L-shape: two squares in one direction and one square perpendicular to that. Bishops move diagonally any number of squares. Queens combine the moves of rooks and bishops, while kings can move one square in any direction.
+    </p>
+
+    <h2>2. How do I set up the chessboard correctly?</h2>
+    <p>
+        Place the chessboard so that each player has a white square on their bottom right corner. Set up the pieces as follows: The rooks go in the corners, followed by the knights next to them, then the bishops, the queen (on her color), and finally the king next to the queen. Pawns are placed on the second rank for white and seventh rank for black.
+    </p>
+
+    <h2>3. What is "castling" in chess?</h2>
+    <p>
+        Castling is a special move that involves the king and one of the rooks. It is the only move that allows the king to move two squares. To castle, the king moves two squares towards the rook, and the rook moves to the square the king passed over. However, there are some rules to follow, such as neither the king nor the rook being moved before, no pieces between them, and the king not being in check or passing through a square that is under attack.
+    </p>
+
+    <h2>4. Can pawns move backward?</h2>
+    <p>
+        No, pawns can only move forward on the chessboard. However, they capture diagonally, and they can promote to any other piece (except another king) if they reach the opposite end of the board.
+    </p>
+
+    <h2>5. How do I win a chess game?</h2>
+    <p>
+        The primary way to win a chess game is by putting your opponent's king in checkmate. Checkmate occurs when the opponent's king is under attack and cannot escape capture on the next move. The game can also end in a draw or stalemate if certain conditions are met, such as insufficient material to checkmate, perpetual check, or the 50-move rule.
+    </p>
+
+    <h2>6. What should I do if I'm in check?</h2>
+    <p>
+        When your king is in check, you must get out of check on the next move. You can do this by moving your king to a safe square, capturing the attacking piece, or blocking the check with another piece. If you cannot escape check, it's checkmate, and the game is over.
+    </p>
+
+    <h2>7. What is "en passant" in chess?</h2>
+    <p>
+        En passant is a unique pawn capture. When an opponent's pawn moves two squares forward from its starting position and lands beside your pawn, you have the option to capture it as if it had only moved one square forward. This capture must be made immediately after the opposing pawn moves, or the opportunity is lost.
+    </p>
+</section>
+
+   <div class="border-fill">
+    <h3>q</h3>
+
+   </div>
     <script>
         // JavaScript to add the typing effect to the title
         const titleElement = document.querySelector(".title");

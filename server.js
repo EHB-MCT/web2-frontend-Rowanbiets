@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
-const cors = require('cors'); // Import the cors module
+const cors = require('cors'); 
 
-// Enable CORS for all routes
+
 app.use(cors());
 
-// Sample JSON data representing the chess openings (replace this with your actual data)
+
 const chessOpenings = [
     {
         "name": "King's Pawn Opening",

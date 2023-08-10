@@ -1,0 +1,217 @@
+
+
+input[type="text"], button {
+    padding: 8px;
+    margin: 4px;
+    border: 2px solid rgb(160, 117, 38);
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.labels label[for="playerIdToDelete"] {
+    margin-right: 20px;
+}
+
+#playersList {
+    list-style: none;
+    padding: 20;
+    margin:  20px 80px;
+}
+
+#playersList li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: 1px solid rgb(160, 117, 38);
+    border-radius: 4px;
+    background-color: rgba(160, 117, 38, 0.1);
+   
+}
+
+#playersList img {
+    margin-right: 10%;
+    position: center;
+}
+
+
+.labels, #playersList {
+    margin-top: 20px;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+body {
+    background: linear-gradient(to bottom, #181515, #1E1E1E);
+}
+
+html{
+    background-color:  #181515;;
+}
+
+.button-section {
+    background-color: none;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: none;
+    
+}
+
+.navigation-button {
+    background-color: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 50px;
+    font-size: 16px;
+    border: 2px solid rgb(160, 117, 38);
+    color: black;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.navigation-button:hover {
+    background-color:transparent;
+    border: 2px solid transparent;
+}
+
+
+.active {
+    border: none;
+}
+
+
+.navigation-button a {
+   color: rgb(160, 117, 38);
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+
+.labels{
+    margin-left: 11%;
+}
+
+.title {
+    position: absolute;
+    top: 150px;
+    left: 35%;
+    z-index: 10;
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(160, 117, 38);
+    overflow: hidden; 
+    
+}
+
+
+
+
+.title::after {
+    content: '|'; 
+    display: inline-block;
+    animation: cursor-blink 0.8s infinite;
+    vertical-align: bottom;
+}
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+
+@keyframes cursor-blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.labels {
+    color: white;
+    margin-top: 10%;
+}
+
+.title2 {
+    position: absolute;
+    top: 130%;
+    left: 35%;
+    z-index: 10;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(160, 117, 38);
+    overflow: hidden; 
+    
+}
+
+.title2 h2::after {
+    content: '|'; 
+    display: inline-block;
+    animation: cursor-blink 0.8s infinite;
+    vertical-align: bottom;
+}
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+
+@keyframes cursor-blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.title3 {
+    position: absolute;
+    top: 155%;
+    left: 35%;
+    z-index: 10;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(160, 117, 38);
+    overflow: hidden; 
+    
+}
+
+.title3 h2::after {
+    content: '|'; 
+    display: inline-block;
+    animation: cursor-blink 0.8s infinite;
+    vertical-align: bottom;
+}
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+
+@keyframes cursor-blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}

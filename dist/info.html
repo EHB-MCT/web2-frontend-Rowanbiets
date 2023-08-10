@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Players</title>
+    <link rel="stylesheet" type="text/css" href="/dist/info.css">
+    <title>Top 5 Chess Players </title>
+</head>
+<body>
+    <section class="button-section">
+        <div class="button-container">
+            <button class="navigation-button"><a href="/dist/Index.html">Home</a></button>
+            <button class="navigation-button"><a href="/dist/beginner.html">Beginner</a></button>
+            <button class="navigation-button"><a href="/dist/mediocre.html">Mediocre</a></button>
+            <button class="navigation-button"><a href="/dist/info.html">Extras</a></button>
+        </div>
+    </section>
+    
+    <div class="title">
+      
+        <span class="typing-text" data-text="Top Chess Players"></span>
+        <span class="cursor"></span>
+    </div>
+
+    <div class="labels">
+        <label for="playerIdToDelete">Rankingnumber:</label>
+        <input type="text" id="playerIdToDelete" name="playerIdToDelete">
+        <button onclick="deletePlayer()">Delete</button>
+
+    </div>
+   
+    <div>
+       
+        <ul id="playersList"></ul>
+    </div>
+    <div class="title2">
+      
+       <h2>Add Player</h2>
+        
+    </div>
+
+    <div class="labels">
+        <label for="cpid">Rankingnumber:</label>
+        <input type="text" id="cpid" name="cpid">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="rating">Rating:</label>
+        <input type="text" id="rating" name="rating">
+       
+        <button onclick="savePlayer()">Add</button>
+    </div>
+
+    <div class="title3">
+      
+        <h2>Update Player</h2>
+         
+     </div>
+
+    <div class="labels">
+        <label for="playerIdToUpdate">Rankingnumber:</label>
+        <input type="text" id="playerIdToUpdate" name="playerIdToUpdate">
+        <label for="nameToUpdate">Name:</label>
+        <input type="text" id="nameToUpdate" name="nameToUpdate">
+        <label for="ratingToUpdate">Rating:</label>
+        <input type="text" id="ratingToUpdate" name="ratingToUpdate">
+        
+        
+        <button onclick="updatePlayer()">Update</button>
+    </div>
+
+  
+    <script src="/src/script.js" type="text/javascript"></script>
+
+    <script>
+      
+        const titleElement = document.querySelector(".title");
+        const text = titleElement.querySelector(".typing-text").dataset.text;
+        let index = 0;
+
+        function type() {
+            const typingText = titleElement.querySelector(".typing-text");
+            typingText.textContent = text.slice(0, index);
+            index++;
+            if (index <= text.length) {
+                setTimeout(type, 100); 
+            }
+        }
+
+       
+        document.addEventListener("DOMContentLoaded", () => {
+            type(); // Start the typing effect when the DOM is loaded
+        });
+    </script>
+</body>
+</html>

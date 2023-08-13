@@ -3,6 +3,8 @@ web2-frontend-Rowanbiets created by GitHub Classroom
 Source links : 
 
 type effect on titles : https://www.w3schools.com/howto/howto_js_typewriter.asp;
+
+
 Enabling cors : https://www.npmjs.com/package/cors;
 
 

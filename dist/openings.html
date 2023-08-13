@@ -30,7 +30,7 @@
 
   
   <script>
-    // JavaScript to add the typing effect to the title
+    // typing effect titles
     const titleElement = document.querySelector(".title");
     const text = titleElement.querySelector(".typing-text").dataset.text;
     let index = 0;
@@ -44,9 +44,8 @@
         }
     }
 
-    // Call the type function when the DOM is loaded
     document.addEventListener("DOMContentLoaded", () => {
-        type(); // Start the typing effect when the DOM is loaded
+        type(); 
     });
 </script>
   <script src="/dist/bundle.js"></script>

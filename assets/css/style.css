@@ -135,7 +135,7 @@ a {
     width: 100%;
     background-color: black;
     opacity: .7;
-    z-index: -1; /* Zet de z-index van de overlay lager dan die van de afbeelding */
+    z-index: -1; 
 }
 
 
@@ -311,7 +311,7 @@ z-index: 5;
 
 #how-to-play .title {
     font-size: 48px;
-    top: 150%; /* Adjust the top position as needed */
+    top: 150%; 
 }
 
 
@@ -328,7 +328,7 @@ z-index: 5;
 #how-to-play .video-container {
     position: relative;
     overflow: hidden;
-    padding-top: 56.25%; /* 16:9 aspect ratio (for responsive video) */
+    padding-top: 56.25%; 
 }
 
 #how-to-play .video-container iframe {
@@ -466,10 +466,10 @@ p {
 }
 
 
-/* Chess History section */
+
 #chess-history {
     padding: 80px 20px;
-    margin-left: 150px; /* Adjust as needed */
+    margin-left: 150px;
 }
 
 #chess-history .container {
@@ -511,7 +511,7 @@ p {
 #chess-history .video-container {
     position: relative;
     overflow: hidden;
-    padding-top: 56.25%; /* 16:9 aspect ratio (for responsive video) */
+    padding-top: 56.25%; 
 }
 
 #chess-history .video-container iframe {

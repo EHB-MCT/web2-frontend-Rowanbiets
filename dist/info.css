@@ -113,6 +113,7 @@ html{
 
 .labels{
     margin-left: 11%;
+    position: relative;
 }
 
 .title {

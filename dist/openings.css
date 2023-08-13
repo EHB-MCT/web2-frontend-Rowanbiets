@@ -110,6 +110,11 @@ body {
   }
   
 
+.opening-video-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
   
   .opening-name {
     font-size: 24px;

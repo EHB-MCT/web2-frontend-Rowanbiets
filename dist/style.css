@@ -268,7 +268,6 @@ z-index: 5;
 .title {
     position: absolute;
     top: 150px;
-    
     left: 40%;
     z-index: 10;
     font-size: 48px;
@@ -277,6 +276,8 @@ z-index: 5;
     overflow: hidden; 
     
 }
+/* End Beginner page */
+
 
 .title::after {
     content: '|'; 
@@ -443,7 +444,84 @@ p {
     background-color: rgb(160, 117, 38);
 }
 
-/* ... (existing CSS styles) ... */
+
+.title2 h2{
+    position: absolute;
+    top: 120%;
+    left: 40%;
+    z-index: 10;
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(160, 117, 38);
+    overflow: hidden; 
+    
+}
+
+
+.title2 h2::after {
+    content: '|'; 
+    display: inline-block;
+    animation: cursor-blink 0.8s infinite;
+    vertical-align: bottom;
+}
+
+
+/* Chess History section */
+#chess-history {
+    padding: 80px 20px;
+    margin-left: 150px; /* Adjust as needed */
+}
+
+#chess-history .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+
+#chess-history .opening {
+   left: 50%;
+    padding: 20px;
+  
+}
+
+#chess-history .col-left {
+    flex: 1;
+}
+
+#chess-history .content {
+    flex: 2;
+}
+
+#chess-history .opening h3 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    color: rgb(160, 117, 38);
+}
+
+#chess-history .opening p {
+    font-size: 14px;
+    padding: 40px;
+    text-align: justify;
+    line-height: 1.6;
+    color: rgb(160, 117, 38);
+}
+
+#chess-history .video-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 aspect ratio (for responsive video) */
+}
+
+#chess-history .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 
 

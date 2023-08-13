@@ -12,3 +12,7 @@ chess openings api with webpack : https://stackoverflow.com/questions/56730369/h
 Issues with css : https://www.w3schools.com/;
 connecting my api with the html : https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/;
 using first letters of the names as image replacer: https://ui-avatars.com/
+
+
+
+URL : https://ehb-mct.github.io/web2-frontend-Rowanbiets/
